@@ -12,8 +12,22 @@ public class Whip extends CondimentDecorator {
         return beverage.getDescription() + " 휘핑";
     }
 
+    public Size getSize() {
+        return beverage.getSize();
+    }
+
     @Override
     public double cost() {
-        return .10 + beverage.cost();
+        double cost = .10 + beverage.cost();
+
+        if(getSize() == Size.TALL) {
+            cost += .10;
+        } else if(getSize() == Size.GRANDE) {
+            cost += .15;
+        } else if(getSize() == Size.VENTI) {
+            cost += .20;
+        }
+
+        return cost;
     }
 }

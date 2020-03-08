@@ -6,6 +6,7 @@ public class StarBuzzCoffee {
         System.out.println(beverage1.getDescription() + " $" + beverage1.cost());
 
         Beverage beverage2 = new DarkRoast();
+        beverage2.setSize(Size.VENTI);
         beverage2 = new Mocha(beverage2);
         beverage2 = new Mocha(beverage2);
         beverage2 = new Whip(beverage2);

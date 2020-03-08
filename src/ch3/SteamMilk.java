@@ -12,8 +12,22 @@ public class SteamMilk extends CondimentDecorator {
         return beverage.getDescription() + " 스팀 밀크";
     }
 
+    public Size getSize() {
+        return beverage.getSize();
+    }
+
     @Override
     public double cost() {
-        return beverage.cost() + .10;
+        double cost = beverage.cost();
+
+        if(getSize() == Size.TALL) {
+            cost = .5 + cost;
+        } else if(getSize() == Size.GRANDE) {
+            cost = .10 + cost;
+        } else if(getSize() == Size.VENTI) {
+            cost = .15 + cost;
+        }
+
+        return cost;
     }
 }
