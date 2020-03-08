@@ -6,7 +6,7 @@ public class Espresso extends Beverage {
     }
 
     @Override
-    public double cose() {
+    public double cost() {
         return 1.99;
     }
 }

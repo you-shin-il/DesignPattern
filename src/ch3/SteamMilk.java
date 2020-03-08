@@ -9,7 +9,7 @@ public class SteamMilk extends CondimentDecorator {
 
     @Override
     public String getDescription() {
-        return beverage.getDescrition() + " 스팀 밀크";
+        return beverage.getDescription() + " 스팀 밀크";
     }
 
     @Override

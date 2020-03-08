@@ -3,7 +3,7 @@ package ch3;
 public abstract class Beverage {
     String description = "";
 
-    public String getDescrition() {
+    public String getDescription() {
         return description;
     }
 

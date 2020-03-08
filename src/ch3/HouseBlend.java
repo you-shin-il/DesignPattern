@@ -6,7 +6,7 @@ public class HouseBlend extends Beverage {
     }
 
     @Override
-    public double cose() {
+    public double cost() {
         return .89;
     }
 }
